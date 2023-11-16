@@ -39,7 +39,9 @@ export function Flashcard({
         </Card>
         <Card className="back flex flex-col items-center justify-center gap-4 text-4xl">
           <CardTitle className="select-none text-lg">{card.back}</CardTitle>
-          <CardContent className="text-sm">{card.def}</CardContent>
+          <CardContent className="text-muted-foreground text-sm">
+            {card.def}
+          </CardContent>
         </Card>
       </div>
     </button>
