@@ -1,4 +1,6 @@
+import { GithubIcon } from "lucide-react";
 import { Flashcard } from "./card";
+import Link from "next/link";
 
 export default function Page(): React.ReactElement {
   return (
@@ -18,8 +20,16 @@ export default function Page(): React.ReactElement {
           );
         })}
       </div>
-      <footer className="mt-4 bg-gray-100 p-8 text-black">
-        © 2023 Simerly APGOV Ian Steiger and Max Wiseman
+      <footer className="mt-4 flex items-center justify-between bg-gray-100 p-8 text-black">
+        © 2023 Ian Steiger and Max Wiseman
+        <div className="flex flex-row">
+          <Link
+            href={"https://github.com/maxwiseman/bor-flashcards"}
+            target="_blank"
+          >
+            <GithubIcon />
+          </Link>
+        </div>
       </footer>
     </>
   );
