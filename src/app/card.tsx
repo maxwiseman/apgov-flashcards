@@ -31,15 +31,10 @@ export function Flashcard({
       <div className="card">
         <Card className="front flex items-center justify-center bg-white px-16 text-4xl">
           <CardTitle className="select-none">{card.front}</CardTitle>
-          {!touched && index === 0 && (
-            <CardContent className="tooltip bg-card text-muted-foreground absolute bottom-4 flex flex-row flex-nowrap items-center gap-2 p-2 text-lg">
-              <MousePointerClick className="h-5 w-5" /> Click the card to flip
-            </CardContent>
-          )}
         </Card>
-        <Card className="back flex flex-col items-center justify-center gap-4 text-4xl">
-          <CardTitle className="select-none text-lg">{card.back}</CardTitle>
-          <CardContent className="text-muted-foreground text-sm">
+        <Card className="back flex flex-col items-center justify-center gap-4 p-6">
+          <CardTitle className="select-none text-xl">{card.back}</CardTitle>
+          <CardContent className="text-sm text-muted-foreground">
             {card.def}
           </CardContent>
         </Card>
