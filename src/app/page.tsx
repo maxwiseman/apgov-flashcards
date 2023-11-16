@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Page(): React.ReactElement {
   return (
     <>
-      <div className="xl:gird-cols-4 grid grid-cols-1 gap-2 p-2 md:grid-cols-2 lg:grid-cols-3">
+      <div className="xl:gird-cols-4 grid grid-cols-1 gap-2 p-2 md:grid-cols-2 md:p-4 lg:gap-6 lg:p-6 xl:grid-cols-3 xl:gap-8 xl:p-16">
         {data.map((card) => {
           return (
             <div key={card.amendment} className="max-w-3xl">
