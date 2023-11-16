@@ -2,21 +2,26 @@ import { Flashcard } from "./card";
 
 export default function Page(): React.ReactElement {
   return (
-    <div className="grid grid-cols-3 gap-2 p-2">
-      {data.map((card) => {
-        return (
-          <div key={card.amendment} className="max-w-3xl">
-            <Flashcard
-              card={{
-                front: card.amendment.toString(),
-                back: card.right,
-                def: card.definition,
-              }}
-            />
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <div className="grid grid-cols-3 gap-2 p-2">
+        {data.map((card) => {
+          return (
+            <div key={card.amendment} className="max-w-3xl">
+              <Flashcard
+                card={{
+                  front: card.amendment.toString(),
+                  back: card.right,
+                  def: card.definition,
+                }}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <footer className="bg-gray-200 p-4 text-black">
+        © 2023 Simerly APGOV Ian Steiger and Max Wiseman
+      </footer>
+    </>
   );
 }
 
