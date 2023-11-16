@@ -29,7 +29,7 @@ export function Flashcard({
       type="button"
     >
       <div className="card">
-        <Card className="front bg-background flex items-center justify-center px-16 text-4xl">
+        <Card className="front flex items-center justify-center bg-white px-16 text-4xl">
           <CardTitle className="select-none">{card.front}</CardTitle>
           {!touched && index === 0 && (
             <CardContent className="tooltip bg-card text-muted-foreground absolute bottom-4 flex flex-row flex-nowrap items-center gap-2 p-2 text-lg">
