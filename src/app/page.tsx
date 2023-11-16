@@ -18,7 +18,7 @@ export default function Page(): React.ReactElement {
           );
         })}
       </div>
-      <footer className="mt-4 bg-gray-200 p-4 text-black">
+      <footer className="mt-4 bg-gray-100 p-8 text-black">
         © 2023 Simerly APGOV Ian Steiger and Max Wiseman
       </footer>
     </>
