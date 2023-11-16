@@ -1,65 +1,84 @@
-import Link from "next/link";
+import { Flashcard } from "./card";
 
-import { CreatePost } from "@/app/_components/create-post";
-import { api } from "@/trpc/server";
-
-export default async function Home() {
-  const hello = await api.post.hello.query({ text: "from tRPC" });
-
+export default function Page(): React.ReactElement {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <p className="text-2xl text-white">
-            {hello ? hello.greeting : "Loading tRPC query..."}
-          </p>
-        </div>
-
-        <CrudShowcase />
-      </div>
-    </main>
-  );
-}
-
-async function CrudShowcase() {
-  const latestPost = await api.post.getLatest.query();
-
-  return (
-    <div className="w-full max-w-xs">
-      {latestPost ? (
-        <p className="truncate">Your most recent post: {latestPost.name}</p>
-      ) : (
-        <p>You have no posts yet.</p>
-      )}
-
-      <CreatePost />
+    <div className="grid grid-cols-3 gap-2 p-2">
+      {data.map((card) => {
+        return (
+          <div key={card.amendment} className="max-w-3xl">
+            <Flashcard
+              card={{
+                front: card.amendment.toString(),
+                back: card.right,
+                def: card.definition,
+              }}
+            />
+          </div>
+        );
+      })}
     </div>
   );
 }
+
+const data = [
+  {
+    amendment: 1,
+    right: "Freedom of Speech",
+    definition:
+      "The right to express one's opinions, ideas, and thoughts freely without government censorship or restraint.",
+  },
+  {
+    amendment: 2,
+    right: "Right to Bear Arms",
+    definition:
+      "The right of citizens to own and carry firearms for self-defense and the defense of the country.",
+  },
+  {
+    amendment: 3,
+    right: "Protection from Quartering of Troops",
+    definition:
+      "Prohibits the government from forcing citizens to house and feed soldiers in their homes during peacetime without consent.",
+  },
+  {
+    amendment: 4,
+    right: "Protection from Unreasonable Searches and Seizures",
+    definition:
+      "Protects individuals from unreasonable searches and seizures by the government and requires warrants based on probable cause.",
+  },
+  {
+    amendment: 5,
+    right: "Right to Due Process of Law",
+    definition:
+      "Ensures fair legal procedures, including the right to a fair and impartial trial, protection against self-incrimination, and protection against double jeopardy.",
+  },
+  {
+    amendment: 6,
+    right: "Right to a Speedy and Public Trial",
+    definition:
+      "Guarantees the right to a quick and public trial by an impartial jury, as well as the right to confront witnesses and have legal representation.",
+  },
+  {
+    amendment: 7,
+    right: "Right to Trial by Jury",
+    definition:
+      "Ensures the right to a trial by jury in civil cases involving a dispute of $20 or more, preserving the right to a jury trial in certain civil matters.",
+  },
+  {
+    amendment: 8,
+    right: "Protection from Cruel and Unusual Punishment",
+    definition:
+      "Prohibits the infliction of cruel and unusual punishment and excessive fines or bail.",
+  },
+  {
+    amendment: 9,
+    right: "Rights Retained by the People",
+    definition:
+      "Recognizes that the people have rights beyond those explicitly stated in the Constitution, emphasizing the importance of individual liberties.",
+  },
+  {
+    amendment: 10,
+    right: "Powers Reserved to the States",
+    definition:
+      "Affirms that powers not delegated to the federal government by the Constitution are reserved for the states and the people.",
+  },
+];
