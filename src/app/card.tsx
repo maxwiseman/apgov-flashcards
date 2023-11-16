@@ -1,20 +1,17 @@
 "use client";
 
-import { MousePointerClick } from "lucide-react";
-import { useState } from "react";
 import { cn } from "@/components/lib/utils";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import "@/styles/flashcards.css";
+import { useState } from "react";
 
 export function Flashcard({
   card,
-  index,
 }: {
   card: { front: string; back: string; def: string };
   index?: number;
 }): React.ReactElement {
   const [flipped, setFlipped] = useState(false);
-  const [touched, setTouched] = useState(false);
 
   return (
     <button
@@ -24,7 +21,6 @@ export function Flashcard({
       )}
       onClick={() => {
         setFlipped(!flipped);
-        setTouched(true);
       }}
       type="button"
     >
