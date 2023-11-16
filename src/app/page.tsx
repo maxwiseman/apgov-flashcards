@@ -3,7 +3,7 @@ import { Flashcard } from "./card";
 export default function Page(): React.ReactElement {
   return (
     <>
-      <div className="grid grid-cols-3 gap-2 p-2">
+      <div className="xl:gird-cols-4 grid grid-cols-1 gap-2 p-2 md:grid-cols-2 lg:grid-cols-3">
         {data.map((card) => {
           return (
             <div key={card.amendment} className="max-w-3xl">
