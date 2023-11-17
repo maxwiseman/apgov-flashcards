@@ -13,18 +13,22 @@ This project is a web-based flashcard application designed to help students memo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/maxwiseman/bor-flashcards.git
+    git clone https://github.com/maxwiseman/bor-flashcards.git
    ```
 
-2. Open the index.html file in your web browser.
+2. Run the command:
 
-3. Start learning and memorizing the amendments!
+   ```bash
+   pnpm i && pnpm run dev
+   ```
+
+3. Navigate to http://localhost:3000 and start learning and memorizing the amendments!
 
 Contributing
 If you'd like to contribute or improve the project, feel free to submit pull requests. Contributions are welcome!
 
 Credits
-This project was created by [Your Name].
+This project was created by Max Wiseman and Ian Steiger.
 
 License
 This project is licensed under the MIT License.
