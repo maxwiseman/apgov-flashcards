@@ -24,7 +24,7 @@ export default function Page(): React.ReactElement {
         © 2023 Ian Steiger and Max Wiseman
         <div className="flex flex-row">
           <Link
-            href={"https://github.com/maxwiseman/bor-flashcards"}
+            href={`https://github.com/${process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER}/${process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG}`}
             target="_blank"
             aria-label="View the source on GitHub"
           >
