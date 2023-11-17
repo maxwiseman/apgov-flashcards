@@ -26,6 +26,7 @@ export default function Page(): React.ReactElement {
           <Link
             href={"https://github.com/maxwiseman/bor-flashcards"}
             target="_blank"
+            aria-label="View the source on GitHub"
           >
             <GithubIcon />
           </Link>
