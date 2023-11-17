@@ -17,9 +17,17 @@
   outline: none;
 }
 
+.flashcard .card div {
+  transition: outline 0.05s ease-in-out;
+  outline: 0px solid black;
+}
+
 @media (prefers-reduced-motion) {
   .card {
     transition: none !important;
+  }
+  .flashcard .card div {
+    transition: outline 0s ease-in-out;
   }
 }
 
