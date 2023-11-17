@@ -30,7 +30,7 @@ export function Flashcard({
         </Card>
         <Card className="back flex flex-col items-center justify-center gap-4 p-6">
           <CardTitle className="select-none text-xl">{card.back}</CardTitle>
-          <CardContent className="text-sm text-muted-foreground">
+          <CardContent className="select-none pb-0 text-sm text-muted-foreground">
             {card.def}
           </CardContent>
         </Card>
