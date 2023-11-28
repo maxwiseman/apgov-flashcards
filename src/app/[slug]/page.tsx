@@ -17,9 +17,7 @@ export default function Page({
   //   .catch(() => {
   //     console.error(`Something went wrong when fetching set ${params.slug}!`);
   //   });
-  const setData = sets.map((set) => {
-    if (set.slug == params.slug) return set;
-  })[0];
+  const setData = sets.filter((set) => set.slug == params.slug)[0];
   return (
     <>
       <div className="xl:gird-cols-4 grid grid-cols-1 gap-2 p-2 md:grid-cols-2 md:p-4 lg:gap-6 lg:p-6 xl:grid-cols-3 xl:gap-8 xl:p-16">
