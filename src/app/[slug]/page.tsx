@@ -1,5 +1,5 @@
 import { api } from "@/trpc/server";
-import { Flashcard } from "../card";
+import { Flashcard } from "./card";
 import { sets } from "@/sets/sets";
 
 export function generateStaticParams(): { slug: string }[] {

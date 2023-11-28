@@ -26,10 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
-        <TRPCReactProvider cookies={cookies().toString()}>
-          {children}
-        </TRPCReactProvider>
-        <footer className="mt-4 flex items-center justify-between bg-gray-100 p-8 text-black">
+        <main className="min-h-screen">
+          <TRPCReactProvider cookies={cookies().toString()}>
+            {children}
+          </TRPCReactProvider>
+        </main>
+        <footer className="mt-4 flex w-screen items-center justify-between bg-gray-100 p-8 text-black">
           © 2023 Ian Steiger and Max Wiseman
           <div className="flex flex-row">
             <Link
