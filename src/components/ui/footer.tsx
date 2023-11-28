@@ -17,7 +17,19 @@ export function Footer() {
 
   return (
     <footer className="flex w-screen items-center justify-between px-2 py-8 text-muted-foreground md:px-4 lg:px-6 xl:px-16">
-      © 2023 Ian Steiger and Max Wiseman
+      <span>
+        © 2023{" "}
+        <Link className="hover:underline" href={"https://github.com/CrazyBalz"}>
+          Ian Steiger
+        </Link>{" "}
+        and{" "}
+        <Link
+          className="hover:underline"
+          href={"https://github.com/maxwiseman"}
+        >
+          Max Wiseman
+        </Link>
+      </span>
       <div className="flex flex-row items-center gap-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
