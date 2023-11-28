@@ -1,5 +1,7 @@
+import { IconChevronLeft } from "@tabler/icons-react";
 import { Flashcard } from "./card";
 import { sets } from "@/sets/sets";
+import Link from "next/link";
 
 export function generateStaticParams(): { slug: string }[] {
   return sets.map((set) => {
@@ -19,8 +21,14 @@ export default function Page({
   //   });
   const setData = sets.filter((set) => set.slug == params.slug)[0];
   return (
-    <>
-      <div className="xl:gird-cols-4 grid grid-cols-1 gap-2 p-2 md:grid-cols-2 md:p-4 lg:gap-6 lg:p-6 xl:grid-cols-3 xl:gap-8 xl:p-16">
+    <div className="flex flex-col gap-2 p-2 md:p-4 lg:gap-6 lg:p-6 xl:gap-8 xl:p-16">
+      <Link
+        href={"/"}
+        className="flex w-max flex-row items-center gap-1 text-lg font-medium transition-[gap,font-weight] duration-300 ease-in-out hover:gap-2 hover:font-bold"
+      >
+        <IconChevronLeft className="h-6 w-6" /> Back to sets
+      </Link>
+      <div className="xl:gird-cols-4 grid grid-cols-1 gap-2 md:grid-cols-2 lg:gap-6 xl:grid-cols-3 xl:gap-8">
         {setData
           ? setData.cards.map((card) => {
               return (
@@ -31,7 +39,7 @@ export default function Page({
             })
           : null}
       </div>
-    </>
+    </div>
   );
 }
 

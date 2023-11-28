@@ -1,5 +1,6 @@
 import { sets } from "@/sets/sets";
 import { MenuCard } from "./menu-card";
+import { Separator } from "@/components/ui/separator";
 
 export default function Page(): React.ReactElement {
   // const sets = await api.set.getAll.query().catch(() => {
@@ -7,9 +8,10 @@ export default function Page(): React.ReactElement {
   // });
   return (
     <div className="flex flex-col gap-8 p-2 md:p-4 lg:p-6 xl:p-16">
-      <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        Sets
-      </h2>
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
+        Card Sets
+        <Separator className="mt-4" />
+      </h1>
       <div className="grid max-w-full grid-cols-1 gap-2 md:grid-cols-1 lg:gap-6 xl:grid-cols-2 xl:gap-8">
         {sets
           ? sets.map((set) => {
