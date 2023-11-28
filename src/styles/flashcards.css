@@ -10,7 +10,7 @@
 }
 
 .flashcard:focus-visible .card div {
-  outline: 2px solid black;
+  outline: 2px solid hsl(var(--foreground));
 }
 
 .flashcard:focus-visible .card div * {
@@ -19,7 +19,7 @@
 
 .flashcard .card div {
   transition: outline 0.05s ease-in-out;
-  outline: 0px solid black;
+  outline: 0px solid hsl(var(--foreground));
 }
 
 @media (prefers-reduced-motion) {
