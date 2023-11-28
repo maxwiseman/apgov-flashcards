@@ -1,4 +1,3 @@
-import { api } from "@/trpc/server";
 import { Flashcard } from "./card";
 import { sets } from "@/sets/sets";
 
@@ -8,17 +7,19 @@ export function generateStaticParams(): { slug: string }[] {
   });
 }
 
-export default async function Page({
+export default function Page({
   params,
 }: {
   params: { slug: string };
-}): Promise<React.ReactElement> {
-  const setData = await api.set.getBySlug
-    .query({ slug: params.slug })
-    .catch(() => {
-      console.error(`Something went wrong when fetching set ${params.slug}!`);
-    });
-  console.log(setData);
+}): React.ReactElement {
+  // const setData = await api.set.getBySlug
+  //   .query({ slug: params.slug })
+  //   .catch(() => {
+  //     console.error(`Something went wrong when fetching set ${params.slug}!`);
+  //   });
+  const setData = sets.map((set) => {
+    if (set.slug == params.slug) return set;
+  })[0];
   return (
     <>
       <div className="xl:gird-cols-4 grid grid-cols-1 gap-2 p-2 md:grid-cols-2 md:p-4 lg:gap-6 lg:p-6 xl:grid-cols-3 xl:gap-8 xl:p-16">

@@ -1,10 +1,10 @@
-import { api } from "@/trpc/server";
+import { sets } from "@/sets/sets";
 import { MenuCard } from "./menu-card";
 
-export default async function Page(): Promise<React.ReactElement> {
-  const sets = await api.set.getAll.query().catch(() => {
-    console.error(`Something went wrong when fetching all sets!`);
-  });
+export default function Page(): React.ReactElement {
+  // const sets = await api.set.getAll.query().catch(() => {
+  //   console.error(`Something went wrong when fetching all sets!`);
+  // });
   return (
     <div className="flex flex-col gap-8 p-2 md:p-4 lg:p-6 xl:p-16">
       <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
