@@ -33,7 +33,7 @@ export function Flashcard({
       type="button"
     >
       <div className="card">
-        <Card className="front flex flex-col items-center justify-center gap-2 bg-white p-8 text-4xl">
+        <Card className="front flex flex-col items-center justify-center gap-2 p-8 text-4xl">
           <CardTitle className="select-none">{card.front.heading}</CardTitle>
           {card.front.subheading && (
             <CardDescription className="text-2xl font-medium text-muted-foreground">

@@ -6,6 +6,15 @@ import { cookies } from "next/headers";
 import { TRPCReactProvider } from "@/trpc/react";
 import Link from "next/link";
 import { GithubIcon } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
+import { ThemeProvider } from "@/components/ui/theme-provider";
+import { Button } from "@/components/ui/button";
+import { IconSun } from "@tabler/icons-react";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Footer } from "@/components/ui/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,23 +35,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
-        <main className="min-h-screen">
-          <TRPCReactProvider cookies={cookies().toString()}>
-            {children}
-          </TRPCReactProvider>
-        </main>
-        <footer className="mt-4 flex w-screen items-center justify-between bg-gray-100 p-8 text-black">
-          © 2023 Ian Steiger and Max Wiseman
-          <div className="flex flex-row">
-            <Link
-              href={`https://github.com/${process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER}/${process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG}`}
-              target="_blank"
-              aria-label="View the source on GitHub"
-            >
-              <GithubIcon />
-            </Link>
-          </div>
-        </footer>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="min-h-screen">
+            <TRPCReactProvider cookies={cookies().toString()}>
+              {children}
+            </TRPCReactProvider>
+          </main>
+          <Separator className="mt-4" />
+        </ThemeProvider>
+        <Footer />
       </body>
     </html>
   );
