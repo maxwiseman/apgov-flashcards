@@ -13,7 +13,11 @@ export default async function Page({
 }: {
   params: { slug: string };
 }): Promise<React.ReactElement> {
-  const setData = await api.set.getBySlug.query({ slug: params.slug });
+  const setData = await api.set.getBySlug
+    .query({ slug: params.slug })
+    .catch(() => {
+      console.error(`Something went wrong when fetching set ${params.slug}!`);
+    });
   console.log(setData);
   return (
     <>
