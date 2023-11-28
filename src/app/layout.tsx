@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "@/trpc/react";
+import Link from "next/link";
+import { GithubIcon } from "lucide-react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +29,18 @@ export default function RootLayout({
         <TRPCReactProvider cookies={cookies().toString()}>
           {children}
         </TRPCReactProvider>
+        <footer className="mt-4 flex items-center justify-between bg-gray-100 p-8 text-black">
+          © 2023 Ian Steiger and Max Wiseman
+          <div className="flex flex-row">
+            <Link
+              href={`https://github.com/${process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER}/${process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG}`}
+              target="_blank"
+              aria-label="View the source on GitHub"
+            >
+              <GithubIcon />
+            </Link>
+          </div>
+        </footer>
       </body>
     </html>
   );

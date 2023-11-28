@@ -1,0 +1,97 @@
+{
+  "title": "Bill of Rights Amendments",
+  "slug": "bill-of-rights",
+  "description": "Flashcards for each of the amendments in the Bill of Rights",
+  "cards": [
+    {
+      "front": {
+        "heading": "1st Amendment"
+      },
+      "back": {
+        "heading": "Freedom of Expression",
+        "description": "Protects the freedom of speech, religion, press, assembly, and the right to petition the government for a redress of grievances."
+      }
+    },
+    {
+      "front": {
+        "heading": "2nd Amendment"
+      },
+      "back": {
+        "heading": "Right to Bear Arms",
+        "description": "Protects the right of the people to keep and bear arms."
+      }
+    },
+    {
+      "front": {
+        "heading": "3rd Amendment"
+      },
+      "back": {
+        "heading": "Protection from Quartering",
+        "description": "Prohibits the forced quartering of soldiers in private homes during peacetime without the owner's consent."
+      }
+    },
+    {
+      "front": {
+        "heading": "4th Amendment"
+      },
+      "back": {
+        "heading": "Protection from Unreasonable Searches and Seizures",
+        "description": "Protects against unreasonable searches and seizures and requires a judicially sanctioned warrant supported by probable cause for such actions."
+      }
+    },
+    {
+      "front": {
+        "heading": "5th Amendment"
+      },
+      "back": {
+        "heading": "Rights of the Accused",
+        "description": "Protects individuals from being compelled to be witnesses against themselves in criminal cases and prohibits double jeopardy and deprivation of life, liberty, or property without due process of law."
+      }
+    },
+    {
+      "front": {
+        "heading": "6th Amendment"
+      },
+      "back": {
+        "heading": "Right to a Fair Trial",
+        "description": "Guarantees the right to a fair and speedy public trial by an impartial jury, including the right to be informed of the nature and cause of the accusation, to confront witnesses, and to have the assistance of counsel."
+      }
+    },
+    {
+      "front": {
+        "heading": "7th Amendment"
+      },
+      "back": {
+        "heading": "Trial by Jury in Civil Cases",
+        "description": "Provides for the right to trial by jury in certain civil cases, according to the rules of common law."
+      }
+    },
+    {
+      "front": {
+        "heading": "8th Amendment"
+      },
+      "back": {
+        "heading": "Protection from Cruel and Unusual Punishment",
+        "description": "Prohibits the imposition of excessive bail or fines and cruel and unusual punishments."
+      }
+    },
+    {
+      "front": {
+        "heading": "9th Amendment"
+      },
+      "back": {
+        "heading": "Unenumerated Rights",
+        "description": "Affirms that the listing of individual rights in the Constitution and Bill of Rights does not deny or disparage other rights retained by the people."
+      }
+    },
+    {
+      "front": {
+        "heading": "10th Amendment"
+      },
+      "back": {
+        "heading": "States' Rights",
+        "description": "Reserves powers not delegated to the federal government to the states or the people."
+      }
+    }
+  ]
+}
