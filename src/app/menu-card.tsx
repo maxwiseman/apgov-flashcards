@@ -9,7 +9,12 @@ export function MenuCard({
   cardSet: CardSet;
 }): React.ReactElement {
   return (
-    <Link className="max-w-full" href={`/${cardSet.slug}`}>
+    <Link
+      aria-label={cardSet.title}
+      aria-description={cardSet.description}
+      className="max-w-full"
+      href={`/${cardSet.slug}`}
+    >
       <Card className="h-48 min-h-min w-full min-w-full max-w-[580px] flex-row gap-6 p-4 md:flex">
         <div className="cardSlot hidden w-full max-w-[13.75rem] md:block">
           <div className="bottomCard" />

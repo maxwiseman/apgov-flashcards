@@ -19,12 +19,17 @@ export function Footer() {
     <footer className="flex w-screen items-center justify-between px-2 py-8 text-muted-foreground md:px-4 lg:px-6 xl:px-16">
       <span>
         © 2023{" "}
-        <Link className="hover:underline" href={"https://github.com/CrazyBalz"}>
+        <Link
+          className="hover:underline"
+          aria-label="Ian Steiger's GitHub profile"
+          href={"https://github.com/CrazyBalz"}
+        >
           Ian Steiger
         </Link>{" "}
         and{" "}
         <Link
           className="hover:underline"
+          aria-label="Max Wiseman's GitHub profile"
           href={"https://github.com/maxwiseman"}
         >
           Max Wiseman
@@ -33,7 +38,11 @@ export function Footer() {
       <div className="flex flex-row items-center gap-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant={"outline"} size={"icon"}>
+            <Button
+              variant={"outline"}
+              size={"icon"}
+              aria-label="Change the color theme"
+            >
               <IconSun className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>
@@ -67,9 +76,13 @@ export function Footer() {
         <Link
           href={`https://github.com/${process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER}/${process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG}`}
           target="_blank"
-          aria-label="View the source on GitHub"
+          aria-label="View the source code on GitHub"
         >
-          <Button variant={"outline"} size={"icon"}>
+          <Button
+            variant={"outline"}
+            size={"icon"}
+            aria-label="View the source code on GitHub"
+          >
             <GitHubLogoIcon className="h-4 w-4" />
           </Button>
         </Link>

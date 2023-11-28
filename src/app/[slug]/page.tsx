@@ -24,6 +24,7 @@ export default function Page({
     <div className="flex flex-col gap-2 p-2 md:p-4 lg:gap-6 lg:p-6 xl:gap-8 xl:p-16">
       <Link
         href={"/"}
+        aria-label="Go back"
         className="flex w-max flex-row items-center gap-1 text-lg font-medium transition-[gap,font-weight] duration-300 ease-in-out hover:gap-2 hover:font-bold"
       >
         <IconChevronLeft className="h-6 w-6" /> Back to sets
