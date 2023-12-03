@@ -16,7 +16,7 @@ export function Footer() {
   const { setTheme, theme } = useTheme();
 
   return (
-    <footer className="flex w-screen items-center justify-between px-2 py-8 text-muted-foreground md:px-4 lg:px-6 xl:px-16">
+    <footer className="flex w-full items-center justify-between px-2 py-8 text-muted-foreground md:px-4 lg:px-6 xl:px-16">
       <span>
         © 2023{" "}
         <Link
