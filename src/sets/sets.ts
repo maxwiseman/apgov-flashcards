@@ -109,6 +109,230 @@ export const sets: CardSet[] = [
     ],
   },
   {
+    title: "Biology and Environmental Science Flashcards",
+    slug: "bio-test",
+    description:
+      "A set of flashcards covering various biological and environmental concepts.",
+    cards: [
+      {
+        front: {
+          heading: "Autotrophs",
+        },
+        back: {
+          heading: "Self-feeders",
+          description:
+            "Produce their own food through photosynthesis or chemosynthesis.",
+        },
+      },
+      {
+        front: {
+          heading: "Chemotrophs",
+        },
+        back: {
+          heading: "Chemical feeders",
+          description:
+            "Obtain energy by breaking down inorganic or organic molecules.",
+        },
+      },
+      {
+        front: {
+          heading: "Heterotrophs",
+        },
+        back: {
+          heading: "Other-feeders",
+          description:
+            "Obtain energy by consuming other organisms or organic substances.",
+        },
+      },
+      {
+        front: {
+          heading: "Detrivore",
+        },
+        back: {
+          heading: "Decay feeder",
+          description: "Feeds on dead and decaying organic matter.",
+        },
+      },
+      {
+        front: {
+          heading: "Nitrogen Cycle",
+        },
+        back: {
+          heading: "Nitrogen cycling",
+          description:
+            "Continuous process of nitrogen movement through the environment.",
+        },
+      },
+      {
+        front: {
+          heading: "Phosphorus Cycle",
+        },
+        back: {
+          heading: "Phosphorus cycling",
+          description: "Movement of phosphorus through the Earth's systems.",
+        },
+      },
+      {
+        front: {
+          heading: "Carbon Cycle",
+        },
+        back: {
+          heading: "Carbon cycling",
+          description:
+            "Continuous exchange of carbon between organisms and the environment.",
+        },
+      },
+      {
+        front: {
+          heading: "Diatoms",
+        },
+        back: {
+          heading: "Microscopic algae",
+          description:
+            "Have intricate cell walls; significant in phytoplankton.",
+        },
+      },
+      {
+        front: {
+          heading: "Dinoflagellates",
+        },
+        back: {
+          heading: "Flagellated algae",
+          description: "Unicellular; crucial in marine ecosystems.",
+        },
+      },
+      {
+        front: {
+          heading: "EM Spectrum",
+        },
+        back: {
+          heading: "Electromagnetic Radiation",
+          description: "Range from radio waves to gamma rays.",
+        },
+      },
+      {
+        front: {
+          heading: "Albedo Effect",
+        },
+        back: {
+          heading: "Surface reflectivity",
+          description: "Reflects sunlight; influences temperature.",
+        },
+      },
+      {
+        front: {
+          heading: "Homologous and Analogous Structures",
+        },
+        back: {
+          heading: "Structural similarities",
+          description:
+            "Homologous share evolutionary origin; Analogous have similar functions.",
+        },
+      },
+      {
+        front: {
+          heading: "Vestigial Structures",
+        },
+        back: {
+          heading: "Functionless remnants",
+          description: "Structures that have lost their original function.",
+        },
+      },
+      {
+        front: {
+          heading: "Echinoderms and Arthropods",
+        },
+        back: {
+          heading: "Marine invertebrates",
+          description:
+            "Echinoderms include starfish; Arthropods include insects and crustaceans.",
+        },
+      },
+      {
+        front: {
+          heading: "Nucleotide",
+        },
+        back: {
+          heading: "Genetic building block",
+          description: "Basic unit of DNA and RNA.",
+        },
+      },
+      {
+        front: {
+          heading: "Allele Frequency",
+        },
+        back: {
+          heading: "Allele proportion",
+          description:
+            "Proportion of a specific allele in a population's gene pool.",
+        },
+      },
+      {
+        front: {
+          heading: "Blood Genotypes",
+        },
+        back: {
+          heading: "Blood type genetics",
+          description:
+            "Genotypes A, B, AB, O; determined by antigens on red blood cells.",
+        },
+      },
+    ],
+  },
+  {
+    title: "Freedom of Speech Limitations",
+    description:
+      "Key limitations on the freedom of speech in the United States",
+    slug: "freedom-of-speech-limitations",
+    cards: [
+      {
+        front: {
+          heading: "Clear and Present Danger Test",
+          subheading: "Case: Schenck v. United States (1919)",
+        },
+        back: {
+          heading: "Imminent Lawless Action",
+          description:
+            "Speech can be restricted if it poses a clear and present danger of imminent lawless action. This test considers whether the words create a threat that society has a right to prevent.",
+        },
+      },
+      {
+        front: {
+          heading: "Hate Speech",
+          subheading: "No specific case (general principle)",
+        },
+        back: {
+          heading: "Protected vs. Unprotected Speech",
+          description:
+            "While hate speech is generally protected, speech that incites violence, discrimination, or 'fighting words' may face restrictions. The distinction lies in the potential harm caused by the speech.",
+        },
+      },
+      {
+        front: {
+          heading: "Incitement Test",
+          subheading: "Case: Brandenburg v. Ohio (1969)",
+        },
+        back: {
+          heading: "Imminent Lawless Action",
+          description:
+            "Sets the standard for restricting speech that advocates illegal conduct. Speech can only be prohibited if it is directed at inciting or producing imminent lawless action and is likely to incite or produce such action.",
+        },
+      },
+      {
+        front: {
+          heading: "Commercial Speech",
+          subheading:
+            "Case: Central Hudson Gas & Electric Corp. v. Public Service Commission (1980)",
+        },
+        back: {
+          heading: "Intermediate Scrutiny",
+          description:
+            "Commercial speech (advertising) is protected but subject to intermediate scrutiny. Restrictions must advance a substantial government interest, directly advance that interest, and not be more extensive than necessary.",
+        },
+      },
+    ],
+  },
+  {
     title: "Landmark Supreme Court Cases",
     slug: "court-cases",
     description:
