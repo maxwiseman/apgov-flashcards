@@ -109,177 +109,6 @@ export const sets: CardSet[] = [
     ],
   },
   {
-    title: "Biology and Environmental Science Flashcards",
-    slug: "bio-test",
-    description:
-      "A set of flashcards covering various biological and environmental concepts.",
-    cards: [
-      {
-        front: {
-          heading: "Autotrophs",
-        },
-        back: {
-          heading: "Self-feeders",
-          description:
-            "Produce their own food through photosynthesis or chemosynthesis.",
-        },
-      },
-      {
-        front: {
-          heading: "Chemotrophs",
-        },
-        back: {
-          heading: "Chemical feeders",
-          description:
-            "Obtain energy by breaking down inorganic or organic molecules.",
-        },
-      },
-      {
-        front: {
-          heading: "Heterotrophs",
-        },
-        back: {
-          heading: "Other-feeders",
-          description:
-            "Obtain energy by consuming other organisms or organic substances.",
-        },
-      },
-      {
-        front: {
-          heading: "Detrivore",
-        },
-        back: {
-          heading: "Decay feeder",
-          description: "Feeds on dead and decaying organic matter.",
-        },
-      },
-      {
-        front: {
-          heading: "Nitrogen Cycle",
-        },
-        back: {
-          heading: "Nitrogen cycling",
-          description:
-            "Continuous process of nitrogen movement through the environment.",
-        },
-      },
-      {
-        front: {
-          heading: "Phosphorus Cycle",
-        },
-        back: {
-          heading: "Phosphorus cycling",
-          description: "Movement of phosphorus through the Earth's systems.",
-        },
-      },
-      {
-        front: {
-          heading: "Carbon Cycle",
-        },
-        back: {
-          heading: "Carbon cycling",
-          description:
-            "Continuous exchange of carbon between organisms and the environment.",
-        },
-      },
-      {
-        front: {
-          heading: "Diatoms",
-        },
-        back: {
-          heading: "Microscopic algae",
-          description:
-            "Have intricate cell walls; significant in phytoplankton.",
-        },
-      },
-      {
-        front: {
-          heading: "Dinoflagellates",
-        },
-        back: {
-          heading: "Flagellated algae",
-          description: "Unicellular; crucial in marine ecosystems.",
-        },
-      },
-      {
-        front: {
-          heading: "EM Spectrum",
-        },
-        back: {
-          heading: "Electromagnetic Radiation",
-          description: "Range from radio waves to gamma rays.",
-        },
-      },
-      {
-        front: {
-          heading: "Albedo Effect",
-        },
-        back: {
-          heading: "Surface reflectivity",
-          description: "Reflects sunlight; influences temperature.",
-        },
-      },
-      {
-        front: {
-          heading: "Homologous and Analogous Structures",
-        },
-        back: {
-          heading: "Structural similarities",
-          description:
-            "Homologous share evolutionary origin; Analogous have similar functions.",
-        },
-      },
-      {
-        front: {
-          heading: "Vestigial Structures",
-        },
-        back: {
-          heading: "Functionless remnants",
-          description: "Structures that have lost their original function.",
-        },
-      },
-      {
-        front: {
-          heading: "Echinoderms and Arthropods",
-        },
-        back: {
-          heading: "Marine invertebrates",
-          description:
-            "Echinoderms include starfish; Arthropods include insects and crustaceans.",
-        },
-      },
-      {
-        front: {
-          heading: "Nucleotide",
-        },
-        back: {
-          heading: "Genetic building block",
-          description: "Basic unit of DNA and RNA.",
-        },
-      },
-      {
-        front: {
-          heading: "Allele Frequency",
-        },
-        back: {
-          heading: "Allele proportion",
-          description:
-            "Proportion of a specific allele in a population's gene pool.",
-        },
-      },
-      {
-        front: {
-          heading: "Blood Genotypes",
-        },
-        back: {
-          heading: "Blood type genetics",
-          description:
-            "Genotypes A, B, AB, O; determined by antigens on red blood cells.",
-        },
-      },
-    ],
-  },
-  {
     title: "Freedom of Speech Limitations",
     description:
       "Key limitations on the freedom of speech in the United States",
@@ -479,6 +308,627 @@ export const sets: CardSet[] = [
           heading: "Freedom of Religion",
           description:
             "Wisconsin v. Yoder (1972) protected the right to freedom of religion, allowing Amish parents to withdraw their children from public school for religious reasons. The decision recognized the importance of accommodating religious practices within the legal framework.",
+        },
+      },
+    ],
+  },
+  {
+    title: "Ecology and Biology Concepts",
+    slug: "biology-test",
+    description: "Flashcards on various ecological and biological terms",
+    cards: [
+      {
+        front: {
+          heading: "Biosphere",
+        },
+        back: {
+          heading: "Global Ecosystem",
+          description: "Earth's life-supporting zone",
+        },
+      },
+      {
+        front: {
+          heading: "Ecosystem",
+        },
+        back: {
+          heading: "Biological Community",
+          description: "Living organisms and their environment",
+        },
+      },
+      {
+        front: {
+          heading: "Communities",
+        },
+        back: {
+          heading: "Interacting Species",
+          description: "Different populations in an area",
+        },
+      },
+      {
+        front: {
+          heading: "Population",
+        },
+        back: {
+          heading: "Group of Organisms",
+          description: "Same species in a specific area",
+        },
+      },
+      {
+        front: {
+          heading: "Organism Producers",
+        },
+        back: {
+          heading: "Autotrophs",
+          description: "Self-sustaining organisms",
+        },
+      },
+      {
+        front: {
+          heading: "Autotrophs",
+        },
+        back: {
+          heading: "Self-Feeders",
+          description: "Organisms producing own food",
+        },
+      },
+      {
+        front: {
+          heading: "Chemotrophs",
+        },
+        back: {
+          heading: "Chemical Energy Consumers",
+          description: "Organisms obtaining energy from chemicals",
+        },
+      },
+      {
+        front: {
+          heading: "Heterotrophs",
+        },
+        back: {
+          heading: "Consumers",
+          description: "Organisms relying on others for food",
+        },
+      },
+      {
+        front: {
+          heading: "Herbivore",
+        },
+        back: {
+          heading: "Plant Eater",
+          description: "Organism consuming plants",
+        },
+      },
+      {
+        front: {
+          heading: "Carnivore",
+        },
+        back: {
+          heading: "Meat Eater",
+          description: "Organism consuming other animals",
+        },
+      },
+      {
+        front: {
+          heading: "Scavenger/Detritivore",
+        },
+        back: {
+          heading: "Carrion Eater",
+          description: "Organism consuming dead organisms",
+        },
+      },
+      {
+        front: {
+          heading: "Omnivore",
+        },
+        back: {
+          heading: "Eats Both Plants and Animals",
+          description: "Organism consuming both plants and animals",
+        },
+      },
+      {
+        front: {
+          heading: "Decomposer",
+        },
+        back: {
+          heading: "Breaks Down Dead Matter",
+          description: "Organism recycling nutrients from dead organisms",
+        },
+      },
+      {
+        front: {
+          heading: "10% Law",
+        },
+        back: {
+          heading: "Energy Transfer Rule",
+          description: "10% energy transfer between trophic levels",
+        },
+      },
+      {
+        front: {
+          heading: "Birth Rate",
+        },
+        back: {
+          heading: "Number of Births",
+          description: "Rate of new individuals born",
+        },
+      },
+      {
+        front: {
+          heading: "Death Rate",
+        },
+        back: {
+          heading: "Number of Deaths",
+          description: "Rate of individuals dying",
+        },
+      },
+      {
+        front: {
+          heading: "Immigration",
+        },
+        back: {
+          heading: "Inward Migration",
+          description: "Movement into a population or area",
+        },
+      },
+      {
+        front: {
+          heading: "Emigration",
+        },
+        back: {
+          heading: "Outward Migration",
+          description: "Movement out of a population or area",
+        },
+      },
+      {
+        front: {
+          heading: "Limiting Factor",
+        },
+        back: {
+          heading: "Population Growth Constraint",
+          description: "Factor limiting population size",
+        },
+      },
+      {
+        front: {
+          heading: "Density-Dependent Factor",
+        },
+        back: {
+          heading: "Impact Increases with Density",
+          description: "Factor affecting population based on density",
+        },
+      },
+      {
+        front: {
+          heading: "Density-Independent Factor",
+        },
+        back: {
+          heading: "Impact Unrelated to Density",
+          description: "Factor affecting population regardless of density",
+        },
+      },
+      {
+        front: {
+          heading: "Carrying Capacity (K)",
+        },
+        back: {
+          heading: "Max Sustainable Population",
+          description: "Maximum population size an environment can support",
+        },
+      },
+      {
+        front: {
+          heading: "Exponential Growth",
+        },
+        back: {
+          heading: "Rapid Population Increase",
+          description: "Population growth without limiting factors",
+        },
+      },
+      {
+        front: {
+          heading: "Logistic Growth",
+        },
+        back: {
+          heading: "S-Shaped Growth Curve",
+          description: "Population growth with limiting factors",
+        },
+      },
+      {
+        front: {
+          heading: "Water Cycle",
+        },
+        back: {
+          heading: "Hydrological Cycle",
+          description: "Movement of water through Earth's systems",
+        },
+      },
+      {
+        front: {
+          heading: "Nitrogen Cycle",
+        },
+        back: {
+          heading: "Nitrogen Movement in Ecosystems",
+          description: "Cycling of nitrogen through ecosystems",
+        },
+      },
+      {
+        front: {
+          heading: "Phosphorus Cycle",
+        },
+        back: {
+          heading: "Phosphorus Movement in Ecosystems",
+          description: "Cycling of phosphorus through ecosystems",
+        },
+      },
+      {
+        front: {
+          heading: "Carbon Cycles",
+        },
+        back: {
+          heading: "Carbon Movement in Ecosystems",
+          description: "Cycling of carbon through ecosystems",
+        },
+      },
+      {
+        front: {
+          heading: "Carbon Sink",
+        },
+        back: {
+          heading: "Carbon Absorption Site",
+          description: "Area storing more carbon than it releases",
+        },
+      },
+      {
+        front: {
+          heading: "Carbon Source",
+        },
+        back: {
+          heading: "Carbon Emission Site",
+          description: "Area releasing more carbon than it absorbs",
+        },
+      },
+      {
+        front: {
+          heading: "Flux",
+        },
+        back: {
+          heading: "Flow Rate",
+          description: "Rate of movement between carbon reservoirs",
+        },
+      },
+      {
+        front: {
+          heading: "Phytoplankton",
+        },
+        back: {
+          heading: "Microscopic Marine Plants",
+          description: "Floating marine plants crucial to ecosystems",
+        },
+      },
+      {
+        front: {
+          heading: "Diatoms",
+        },
+        back: {
+          heading: "Silica-Shelled Algae",
+          description: "Microscopic algae with intricate shells",
+        },
+      },
+      {
+        front: {
+          heading: "Dinoflagellates",
+        },
+        back: {
+          heading: "Flagellated Protists",
+          description: "Microorganisms with flagella, often in plankton",
+        },
+      },
+      {
+        front: {
+          heading: "Oil",
+        },
+        back: {
+          heading: "Petroleum",
+          description: "Fossil fuel formed from organic matter",
+        },
+      },
+      {
+        front: {
+          heading: "Natural Gas",
+        },
+        back: {
+          heading: "Methane Resource",
+          description: "Fossil fuel in gaseous form",
+        },
+      },
+      {
+        front: {
+          heading: "Coal",
+        },
+        back: {
+          heading: "Solid Fossil Fuel",
+          description: "Carbon-rich fossil fuel",
+        },
+      },
+      {
+        front: {
+          heading: "Greenhouse Gas",
+        },
+        back: {
+          heading: "Heat-Trapping Gas",
+          description: "Gas contributing to the greenhouse effect",
+        },
+      },
+      {
+        front: {
+          heading: "Greenhouse Effect",
+        },
+        back: {
+          heading: "Heat Retention by Atmosphere",
+          description: "Trapping of heat in the Earth's atmosphere",
+        },
+      },
+      {
+        front: {
+          heading: "EM Spectrum",
+        },
+        back: {
+          heading: "Electromagnetic Spectrum",
+          description: "Range of electromagnetic waves",
+        },
+      },
+      {
+        front: {
+          heading: "Climate Change",
+        },
+        back: {
+          heading: "Global Climate Alteration",
+          description: "Long-term changes in Earth's climate",
+        },
+      },
+      {
+        front: {
+          heading: "Albedo Effect",
+        },
+        back: {
+          heading: "Reflectivity Impact",
+          description: "Surface reflectivity affecting temperature",
+        },
+      },
+      {
+        front: {
+          heading: "Graph: CO2 and Temp",
+        },
+        back: {
+          heading: "Climate Trends",
+          description:
+            "Graph showing CO2 and temperature correlation over 800,000 years",
+        },
+      },
+      {
+        front: {
+          heading: "LUCA",
+        },
+        back: {
+          heading: "Last Universal Common Ancestor",
+          description: "Hypothetical common ancestor of all life",
+        },
+      },
+      {
+        front: {
+          heading: "3 Domains",
+        },
+        back: {
+          heading: "Archaea, Bacteria, Eukarya",
+          description: "Classification of life into three major groups",
+        },
+      },
+      {
+        front: {
+          heading: "Homologous Structures",
+        },
+        back: {
+          heading: "Similar Anatomical Features",
+          description: "Structures with common evolutionary origin",
+        },
+      },
+      {
+        front: {
+          heading: "Analogous Structures",
+        },
+        back: {
+          heading: "Similar Function, Different Origin",
+          description:
+            "Structures with similar function but different evolutionary origin",
+        },
+      },
+      {
+        front: {
+          heading: "Vestigial Structures",
+        },
+        back: {
+          heading: "Functionless Remnants",
+          description: "Structures with no apparent function",
+        },
+      },
+      {
+        front: {
+          heading: "Fossils",
+        },
+        back: {
+          heading: "Preserved Remains",
+          description: "Remnants of past life, often in rock",
+        },
+      },
+      {
+        front: {
+          heading: "Echinoderms and Arthropods",
+        },
+        back: {
+          heading: "Invertebrate Phyla",
+          description: "Two diverse animal phyla",
+        },
+      },
+      {
+        front: {
+          heading: "Genome",
+        },
+        back: {
+          heading: "Organism's Genetic Material",
+          description: "Complete set of genes in an organism",
+        },
+      },
+      {
+        front: {
+          heading: "Chromosome",
+        },
+        back: {
+          heading: "Genetic Information Carrier",
+          description: "Thread-like structure carrying genes",
+        },
+      },
+      {
+        front: {
+          heading: "Gene",
+        },
+        back: {
+          heading: "Genetic Code Segment",
+          description: "Basic unit of heredity",
+        },
+      },
+      {
+        front: {
+          heading: "Nucleotide",
+        },
+        back: {
+          heading: "DNA Building Block",
+          description: "Basic unit of DNA and RNA",
+        },
+      },
+      {
+        front: {
+          heading: "Heterozygous and Homozygous Alleles",
+        },
+        back: {
+          heading: "Different and Same Alleles",
+          description: "Allele combinations in genetics",
+        },
+      },
+      {
+        front: {
+          heading: "Allele Frequency",
+        },
+        back: {
+          heading: "Relative Allele Abundance",
+          description: "Proportion of an allele in a population",
+        },
+      },
+      {
+        front: {
+          heading: "Genotype",
+        },
+        back: {
+          heading: "Genetic Makeup",
+          description: "Genetic constitution of an organism",
+        },
+      },
+      {
+        front: {
+          heading: "Phenotype",
+        },
+        back: {
+          heading: "Observable Traits",
+          description: "Physical and biochemical features of an organism",
+        },
+      },
+      {
+        front: {
+          heading: "Punnett Square",
+        },
+        back: {
+          heading: "Genetic Cross Diagram",
+          description: "Tool for predicting offspring genotypes",
+        },
+      },
+      {
+        front: {
+          heading: "Blood Types",
+        },
+        back: {
+          heading: "A, B, AB, O",
+          description: "Human blood group classifications",
+        },
+      },
+      {
+        front: {
+          heading: "Evolution",
+        },
+        back: {
+          heading: "Species Change Over Time",
+          description: "Gradual change in organisms over generations",
+        },
+      },
+      {
+        front: {
+          heading: "Mutation",
+        },
+        back: {
+          heading: "Genetic Change",
+          description: "Alteration in DNA sequence",
+        },
+      },
+      {
+        front: {
+          heading: "Variation",
+        },
+        back: {
+          heading: "Genetic Diversity",
+          description: "Differences in traits within a population",
+        },
+      },
+      {
+        front: {
+          heading: "Selection or Drift",
+        },
+        back: {
+          heading: "Evolutionary Mechanisms",
+          description: "Processes influencing allele frequencies",
+        },
+      },
+      {
+        front: {
+          heading: "Lithosphere",
+        },
+        back: {
+          heading: "Earth's Solid Outer Shell",
+          description: "Rigid outer layer including the crust and upper mantle",
+        },
+      },
+      {
+        front: {
+          heading: "Diatoms",
+        },
+        back: {
+          heading: "Silica-Shelled Algae",
+          description: "Microscopic algae with intricate shells",
+        },
+      },
+      {
+        front: {
+          heading: "Dinoflagellates",
+        },
+        back: {
+          heading: "Flagellated Protists",
+          description: "Microorganisms with flagella, often in plankton",
+        },
+      },
+      {
+        front: {
+          heading: "EM Spectrum",
+        },
+        back: {
+          heading: "Electromagnetic Spectrum",
+          description: "Range of electromagnetic waves",
         },
       },
     ],
