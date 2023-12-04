@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Bill of Rights Flashcards",
+  title: "Flashcards",
   description: "Created by Max Wiseman and Ian Steiger",
   icons: [{ rel: "icon", url: "/favicon.svg" }],
 };
