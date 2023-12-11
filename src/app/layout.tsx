@@ -7,6 +7,7 @@ import { TRPCReactProvider } from "@/trpc/react";
 import { Separator } from "@/components/ui/separator";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Footer } from "@/components/ui/footer";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,11 +34,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="min-h-screen">
-            <TRPCReactProvider cookies={cookies().toString()}>
-              {children}
-            </TRPCReactProvider>
-          </main>
+          <TooltipProvider>
+            <main>
+              <TRPCReactProvider cookies={cookies().toString()}>
+                {children}
+              </TRPCReactProvider>
+            </main>
+          </TooltipProvider>
           <Separator className="mt-4" />
         </ThemeProvider>
         <Footer />
