@@ -933,4 +933,398 @@ export const sets: CardSet[] = [
       },
     ],
   },
+  {
+    title: "Polyatomic Ions Flashcards",
+    slug: "polyatomic-ions",
+    description:
+      "Flashcards for various polyatomic ions with formulas and descriptions.",
+    cards: [
+      {
+        front: {
+          heading: "Ammonium",
+          subheading: "",
+        },
+        back: {
+          heading: "NH4-",
+          description: "Commonly found in fertilizers for plant growth.",
+        },
+      },
+      {
+        front: {
+          heading: "Nitrite",
+          subheading: "",
+        },
+        back: {
+          heading: "NO2-",
+          description:
+            "Used in food preservation and may play a role in biological signaling.",
+        },
+      },
+      {
+        front: {
+          heading: "Nitrate",
+          subheading: "",
+        },
+        back: {
+          heading: "NO3-",
+          description:
+            "Common component of fertilizers, promoting plant growth.",
+        },
+      },
+      {
+        front: {
+          heading: "Hydroxide",
+          subheading: "",
+        },
+        back: {
+          heading: "OH-",
+          description:
+            "Present in alkaline solutions; used in the chemical industry.",
+        },
+      },
+      {
+        front: {
+          heading: "Cyanide",
+          subheading: "",
+        },
+        back: {
+          heading: "CN-",
+          description:
+            "Infamous for its toxicity; used in certain industrial processes.",
+        },
+      },
+      {
+        front: {
+          heading: "Permanganate",
+          subheading: "",
+        },
+        back: {
+          heading: "MnO4-",
+          description:
+            "Utilized as a strong oxidizing agent in various chemical applications.",
+        },
+      },
+      {
+        front: {
+          heading: "Bicarbonate",
+          subheading: "",
+        },
+        back: {
+          heading: "HCO3-",
+          description: "Involved in the regulation of pH in the human body.",
+        },
+      },
+      {
+        front: {
+          heading: "Hypochlorite",
+          subheading: "",
+        },
+        back: {
+          heading: "ClO-",
+          description:
+            "Commonly used in household bleach for disinfection purposes.",
+        },
+      },
+      {
+        front: {
+          heading: "Chlorite",
+          subheading: "",
+        },
+        back: {
+          heading: "ClO2-",
+          description:
+            "Used as a disinfectant and in water treatment processes.",
+        },
+      },
+      {
+        front: {
+          heading: "Chlorate",
+          subheading: "",
+        },
+        back: {
+          heading: "ClO3-",
+          description:
+            "Involved in the production of certain chemicals and disinfectants.",
+        },
+      },
+      {
+        front: {
+          heading: "Perchlorate",
+          subheading: "",
+        },
+        back: {
+          heading: "ClO4-",
+          description: "Used in rocket propellants and fireworks.",
+        },
+      },
+      {
+        front: {
+          heading: "Bromate",
+          subheading: "",
+        },
+        back: {
+          heading: "BrO3-",
+          description: "Commonly used in bread making as a flour improver.",
+        },
+      },
+      {
+        front: {
+          heading: "Iodate",
+          subheading: "",
+        },
+        back: {
+          heading: "IO3-",
+          description: "Used as a dough conditioner in the baking industry.",
+        },
+      },
+      {
+        front: {
+          heading: "Periodate",
+          subheading: "",
+        },
+        back: {
+          heading: "IO4-",
+          description: "Involved in organic synthesis and as a disinfectant.",
+        },
+      },
+      {
+        front: {
+          heading: "Acetate",
+          subheading: "",
+        },
+        back: {
+          heading: "C2H3O2-",
+          description:
+            "Commonly used in the textile and pharmaceutical industries.",
+        },
+      },
+      {
+        front: {
+          heading: "Dihydrogen Phosphate",
+          subheading: "",
+        },
+        back: {
+          heading: "H2PO4-",
+          description:
+            "Involved in biological processes and as a buffering agent.",
+        },
+      },
+      {
+        front: {
+          heading: "Carbonate",
+          subheading: "",
+        },
+        back: {
+          heading: "CO3-2",
+          description:
+            "Used in the production of glass, ceramics, and as a stabilizing agent.",
+        },
+      },
+      {
+        front: {
+          heading: "Sulfite",
+          subheading: "",
+        },
+        back: {
+          heading: "SO3-2",
+          description:
+            "Used as a preservative in the food and beverage industry.",
+        },
+      },
+      {
+        front: {
+          heading: "Sulfate",
+          subheading: "",
+        },
+        back: {
+          heading: "SO4-2",
+          description:
+            "Commonly found in fertilizers and as a coagulating agent.",
+        },
+      },
+      {
+        front: {
+          heading: "Thiosulfate",
+          subheading: "",
+        },
+        back: {
+          heading: "S2O3-2",
+          description: "Used in photography as a fixing agent.",
+        },
+      },
+      {
+        front: {
+          heading: "Peroxide",
+          subheading: "",
+        },
+        back: {
+          heading: "O2-2",
+          description:
+            "Used as a bleach and antiseptic in various applications.",
+        },
+      },
+      {
+        front: {
+          heading: "Chromate",
+          subheading: "",
+        },
+        back: {
+          heading: "CrO4-2",
+          description:
+            "Used in the production of pigments and as a corrosion inhibitor.",
+        },
+      },
+      {
+        front: {
+          heading: "Dichromate",
+          subheading: "",
+        },
+        back: {
+          heading: "CrO7-2",
+          description:
+            "Utilized in the leather tanning process and as a corrosion inhibitor.",
+        },
+      },
+      {
+        front: {
+          heading: "Hydrogen Phosphate",
+          subheading: "",
+        },
+        back: {
+          heading: "HPO4-2",
+          description:
+            "Involved in biological processes and as a buffering agent.",
+        },
+      },
+      {
+        front: {
+          heading: "Phosphate",
+          subheading: "",
+        },
+        back: {
+          heading: "PO4-3",
+          description:
+            "Critical for energy transfer in living organisms and DNA structure.",
+        },
+      },
+      {
+        front: {
+          heading: "Arsenate",
+          subheading: "",
+        },
+        back: {
+          heading: "AsO4-3",
+          description: "Used as a herbicide and in the preservation of wood.",
+        },
+      },
+      {
+        front: {
+          heading: "Hydrogen Sulfate",
+          subheading: "",
+        },
+        back: {
+          heading: "HSO4-",
+          description:
+            "Used in the production of fertilizers and as a pH regulator.",
+        },
+      },
+      {
+        front: {
+          heading: "Oxalate",
+          subheading: "",
+        },
+        back: {
+          heading: "C2O4-2",
+          description:
+            "Found in some plants and can form kidney stones in humans.",
+        },
+      },
+      {
+        front: {
+          heading: "Citrate",
+          subheading: "",
+        },
+        back: {
+          heading: "C6H5O7-3",
+          description:
+            "Used as a food additive and in the pharmaceutical industry.",
+        },
+      },
+      {
+        front: {
+          heading: "Oxygen",
+          subheading: "",
+        },
+        back: {
+          heading: "O2",
+          description: "Essential for respiration and combustion processes.",
+        },
+      },
+      {
+        front: {
+          heading: "Nitrogen",
+          subheading: "",
+        },
+        back: {
+          heading: "N2",
+          description:
+            "Constitutes a significant portion of Earth's atmosphere; essential for life.",
+        },
+      },
+      {
+        front: {
+          heading: "Hydrogen",
+          subheading: "",
+        },
+        back: {
+          heading: "H2",
+          description:
+            "Commonly used in various industrial processes and as a fuel.",
+        },
+      },
+      {
+        front: {
+          heading: "Fluorine",
+          subheading: "",
+        },
+        back: {
+          heading: "F2",
+          description:
+            "Used in the production of fluoridated water and various chemicals.",
+        },
+      },
+      {
+        front: {
+          heading: "Chlorine",
+          subheading: "",
+        },
+        back: {
+          heading: "Cl2",
+          description:
+            "Widely used in water purification and as a disinfectant.",
+        },
+      },
+      {
+        front: {
+          heading: "Bromine",
+          subheading: "",
+        },
+        back: {
+          heading: "Br2",
+          description: "Used in flame retardants, dyes, and pharmaceuticals.",
+        },
+      },
+      {
+        front: {
+          heading: "Iodine",
+          subheading: "",
+        },
+        back: {
+          heading: "I2",
+          description:
+            "Used in medicine, photography, and as a dietary supplement.",
+        },
+      },
+    ],
+  },
 ];

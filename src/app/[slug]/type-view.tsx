@@ -64,7 +64,7 @@ export function TypeView({ cardSet }: { cardSet: CardSet }) {
         {promptWord}
       </h2>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)}>
+        <form autoComplete="off" onSubmit={form.handleSubmit(onSubmit)}>
           <FormField
             control={form.control}
             name="guess"
@@ -73,6 +73,7 @@ export function TypeView({ cardSet }: { cardSet: CardSet }) {
                 <FormControl>
                   <div className="relative">
                     <Input
+                      autoComplete="off"
                       placeholder="Type something..."
                       className="w-96 rounded-full pr-10 shadow-lg"
                       {...field}
