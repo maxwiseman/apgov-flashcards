@@ -39,7 +39,7 @@ export default function Page({
           >
             <IconChevronLeft className="h-6 w-6" /> Back to sets
           </Link>
-          <TabsList className="px-2">
+          <TabsList className="h-max p-1">
             <TabsTrigger value="grid">
               <IconLayoutGrid className="h-4 w-4" />
             </TabsTrigger>
