@@ -35,7 +35,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>
-            <main>
+            <main className="min-h-screen">
               <TRPCReactProvider cookies={cookies().toString()}>
                 {children}
               </TRPCReactProvider>
