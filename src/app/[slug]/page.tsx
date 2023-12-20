@@ -10,6 +10,7 @@ import Link from "next/link";
 import { GridView } from "./grid-view";
 import { TypeView } from "./type-view";
 import { StackView } from "./stack-view";
+import { Button } from "@/components/ui/button";
 
 export function generateStaticParams(): { slug: string }[] {
   return sets.map((set) => {
@@ -35,9 +36,11 @@ export default function Page({
           <Link
             href={"/"}
             aria-label="Go back"
-            className="flex w-max flex-row items-center gap-1 text-lg font-medium transition-[gap,font-weight] duration-300 ease-in-out hover:gap-2 hover:font-bold"
+            className="w-max text-lg font-medium"
           >
-            <IconChevronLeft className="h-6 w-6" /> Back to sets
+            <Button className="flex flex-row gap-2" variant={"ghost"}>
+              <IconChevronLeft className="h-5 w-5" /> Back to sets
+            </Button>
           </Link>
           <TabsList className="h-max p-1">
             <TabsTrigger value="grid">
