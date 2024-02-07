@@ -8,6 +8,8 @@ import { Separator } from "@/components/ui/separator";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Footer } from "@/components/ui/footer";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from '@/components/ui/sonner';
+import { SendNotification } from './client';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,6 +46,8 @@ export default function RootLayout({
           <Separator className="mt-4" />
         </ThemeProvider>
         <Footer />
+        <Toaster expand={false} visibleToasts={1} />
+        <SendNotification />
       </body>
     </html>
   );
